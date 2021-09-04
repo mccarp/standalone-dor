@@ -129,6 +129,7 @@ function kdo.dor(command, echoback)
   if not command or command == "off" then
     if kdo.repeating or command == "off" then
       kdo.repeating = false
+      kdo.doQueue = {}
       if echoback then
         kdo.echo("Do-Repeat &lt;red&gt;disabled")
       end
